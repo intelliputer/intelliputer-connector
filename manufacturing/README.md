@@ -14,7 +14,7 @@ Fabrication requirements:
   contact finish with the board house—hard gold over nickel is preferred for
   repeated insertion—and ask whether bevelled card-edge fingers are available.
 - The board profile is supplied by
-  `intelliputer_connector-Edge_Cuts.gm1`.
+  `intelliputer_connector-Edge_Cuts.gbr`.
 
 Files:
 

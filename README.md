@@ -9,6 +9,8 @@ the board uses the original cartridge outline.
 ## Current status
 
 - The 1:1 routing is complete, including the repaired `CARD_14` connection.
+- The card/tongue end is shortened by 15 mm (83.91 mm overall board length)
+  and includes centered front-silkscreen artwork.
 - KiCad 10.0.7 DRC passes with **zero violations** and **zero unconnected
   items**.
 - The current fabrication package is available as
