@@ -1,6 +1,6 @@
 ** Drc report for intelliputer_connector.kicad_pcb **
-** Created on 2026-10-21T16:00:11 **
-** Report includes: Errors, Warnings, Exclusions **
+** Created on 2026-10-21T16:11:10 **
+** Report includes: Errors, Warnings **
 
 ** Found 0 DRC violations **
 

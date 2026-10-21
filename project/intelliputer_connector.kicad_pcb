@@ -1392,6 +1392,14 @@
 		(uuid "32cefaa6-d52d-4628-8e53-3d174365262f")
 	)
 	(segment
+		(start 129.4257 183.54)
+		(end 129.4257 105.54)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "CARD_14")
+		(uuid "c78b652e-1cf2-41e0-bd13-7f5c592b2784")
+	)
+	(segment
 		(start 126.8857 183.54)
 		(end 128.1857 182.24)
 		(width 0.25)

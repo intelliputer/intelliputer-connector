@@ -18,10 +18,8 @@ Fabrication requirements:
 
 Files:
 
-- `.gtl` / `.gbl`: front / back copper
-- `.gts` / `.gbs`: front / back solder mask
-- `.gto`: front silkscreen
-- `.gm1`: board profile
+- `.gbr`: Gerbers for front/back copper, solder mask, silkscreen, and board
+  profile (the filename identifies the layer)
 - `.drl`: plated-through Excellon drill data
 - `Intelliputer-Connector-DRC.txt`: KiCad DRC result
 - `Intelliputer-Connector-Drill-Report.txt`: drill summary
