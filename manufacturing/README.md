@@ -14,7 +14,7 @@ front-side edge labels, `44` at left and `2` at right.
 Fabrication requirements:
 
 - Two copper layers: F.Cu and B.Cu
-- Finished board thickness: **1.6 mm**
+- Finished board thickness: **1.55 mm**
 - 44 plated through holes: **1.00 mm finished drill**
 - Card-edge finger pitch: **2.54 mm**
 - Card-edge contacts are exposed on both sides. Specify a suitable connector
@@ -22,6 +22,10 @@ Fabrication requirements:
   repeated insertion—and ask whether bevelled card-edge fingers are available.
 - The board profile is supplied by
   `intelliputer_connector-Edge_Cuts.gbr`.
+
+For the full repeatable release, ordering, and first-article acceptance process
+for this and other Intellivision card-edge designs, see
+[Precision edge-connector production procedure](edge-connector-production-procedure.md).
 
 Files:
 
