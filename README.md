@@ -13,17 +13,23 @@ The assignment below correlates those numbers with the published
 [Intellivision cartridge-port specification](https://wiki.intellivision.us/index.php/Cartridge_Port).
 For a complete, repository-local technical reference derived from that source,
 see [the cartridge-port reference](documentation/intellivision-cartridge-port-reference.md).
-With the card edge at the bottom and the header viewed from the front, J2 pin
-pairs run from right to left (`1/2` through `43/44`); pin 1 is the square pad.
-Odd-numbered card-edge contacts are on the back/B.Cu (solder) side and
-even-numbered contacts are on the front/F.Cu (component) side.
+For safe bench wiring, start with the
+[pinout safety guide](documentation/pinout-safety-guide.md).
+The source PCB also prints the compact 1–44 net-name table on its B.Cu
+silkscreen.
+With the card edge at the bottom and the header viewed from the component side,
+the J2 upper row runs from `2` at the right through `44` at the left, while the
+lower row runs from `1` at the right through `43` at the left; pin 1 is the
+square pad. On an inserted cartridge, that component/silkscreen side is the
+**top**: it carries the even card-edge contacts. The B.Cu solder side is the
+**bottom** and carries the odd contacts.
 
-![Front and back card-edge views with physical pin IDs](documentation/images/intellivision-cartridge-pinout.svg)
+![Top and bottom card-edge views with physical pin IDs](documentation/images/intellivision-cartridge-pinout.svg)
 
 The diagram is vector artwork (2400 × 1450 SVG), so it may be enlarged or
 printed without loss of detail. A 2400 × 1450 PNG version is also available:
 [download the pinout image](documentation/images/intellivision-cartridge-pinout.png).
-The back-side view is flipped to retain an edge-down orientation; this places
+The bottom-side view is flipped to retain an edge-down orientation; this places
 pin 1 at the left in that panel.
 
 | J1 / J2 pins | Published Intellivision signal(s) |
@@ -83,7 +89,7 @@ outputs on 37/39/41 and drive the inputs on 36/34/32 deliberately instead.
 - KiCad 10.0.7 DRC passes with **zero violations** and **zero unconnected
   items**.
 - The current fabrication package is available as
-  [Intelliputer-Connector-Gerbers.zip](manufacturing/Intelliputer-Connector-Gerbers.zip).
+  [Intelliputer-Connector-Gerbers-r1.1.zip](manufacturing/Intelliputer-Connector-Gerbers-r1.1.zip).
   It contains the `.gbr` Gerbers, Excellon drill data, drill map, and current
   DRC and drill reports.
 

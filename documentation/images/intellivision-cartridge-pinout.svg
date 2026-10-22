@@ -16,20 +16,28 @@
     .hole { fill: #e9e4d5; stroke: #08131b; stroke-width: 4; }
     .pin-one { fill: #ce4242; }
   </style>
+  <defs>
+    <!-- One J2 column: J2 has 22 columns of two plated-through holes. -->
+    <g id="header-column" class="hole">
+      <circle cy="405" r="12"/>
+      <circle cy="445" r="12"/>
+    </g>
+  </defs>
   <rect class="background" width="2400" height="1450"/>
   <text class="heading" x="1200" y="95" text-anchor="middle">INTELLIPUTER CONNECTOR — CARTRIDGE-EDGE PIN IDENTITY</text>
   <text class="note" x="1200" y="145" text-anchor="middle">Contact-side views; keep the card edge at the bottom. Pin 1 is the square J2 pad.</text>
 
   <!-- Front, F.Cu: even contacts. -->
   <g transform="translate(145,235)">
-    <text class="subheading" x="500" y="0" text-anchor="middle">FRONT / F.Cu — EVEN PINS</text>
-    <text class="note" x="500" y="43" text-anchor="middle">Component side; pin 2 is at the right.</text>
+    <text class="subheading" x="500" y="0" text-anchor="middle">TOP / F.Cu — EVEN PINS</text>
+    <text class="note" x="500" y="43" text-anchor="middle">Component/silkscreen side; inserted component side up. Pin 2 is at the right.</text>
     <path class="board" d="M65 115 H935 V815 L855 900 H145 L65 815 Z"/>
     <text class="silk" x="500" y="265" text-anchor="middle">INTELLIPUTER CONNECTOR</text>
-    <text class="silk" x="500" y="300" text-anchor="middle">FRONT / F.Cu</text>
+    <text class="silk" x="500" y="300" text-anchor="middle">TOP / F.Cu</text>
     <rect class="header" x="170" y="375" width="660" height="100" rx="8"/>
-    <g class="hole">
-      <circle cx="200" cy="405" r="12"/><circle cx="200" cy="445" r="12"/><circle cx="260" cy="405" r="12"/><circle cx="260" cy="445" r="12"/><circle cx="320" cy="405" r="12"/><circle cx="320" cy="445" r="12"/><circle cx="380" cy="405" r="12"/><circle cx="380" cy="445" r="12"/><circle cx="440" cy="405" r="12"/><circle cx="440" cy="445" r="12"/><circle cx="500" cy="405" r="12"/><circle cx="500" cy="445" r="12"/><circle cx="560" cy="405" r="12"/><circle cx="560" cy="445" r="12"/><circle cx="620" cy="405" r="12"/><circle cx="620" cy="445" r="12"/><circle cx="680" cy="405" r="12"/><circle cx="680" cy="445" r="12"/><circle cx="740" cy="405" r="12"/><circle cx="740" cy="445" r="12"/><circle cx="800" cy="405" r="12"/><circle cx="800" cy="445" r="12"/>
+    <g>
+      <use href="#header-column" x="185"/><use href="#header-column" x="215"/><use href="#header-column" x="245"/><use href="#header-column" x="275"/><use href="#header-column" x="305"/><use href="#header-column" x="335"/><use href="#header-column" x="365"/><use href="#header-column" x="395"/><use href="#header-column" x="425"/><use href="#header-column" x="455"/><use href="#header-column" x="485"/><use href="#header-column" x="515"/><use href="#header-column" x="545"/><use href="#header-column" x="575"/><use href="#header-column" x="605"/><use href="#header-column" x="635"/><use href="#header-column" x="665"/><use href="#header-column" x="695"/><use href="#header-column" x="725"/><use href="#header-column" x="755"/><use href="#header-column" x="785"/><use href="#header-column" x="815"/>
+      <rect class="pin-one" x="803" y="433" width="24" height="24" rx="2"/>
     </g>
     <g class="copper">
       <rect x="150" y="700" width="28" height="160"/><rect x="184" y="700" width="28" height="160"/><rect x="218" y="700" width="28" height="160"/><rect x="252" y="700" width="28" height="160"/><rect x="286" y="700" width="28" height="160"/><rect x="320" y="700" width="28" height="160"/><rect x="354" y="700" width="28" height="160"/><rect x="388" y="700" width="28" height="160"/><rect x="422" y="700" width="28" height="160"/><rect x="456" y="700" width="28" height="160"/><rect x="490" y="700" width="28" height="160"/><rect x="524" y="700" width="28" height="160"/><rect x="558" y="700" width="28" height="160"/><rect x="592" y="700" width="28" height="160"/><rect x="626" y="700" width="28" height="160"/><rect x="660" y="700" width="28" height="160"/><rect x="694" y="700" width="28" height="160"/><rect x="728" y="700" width="28" height="160"/><rect x="762" y="700" width="28" height="160"/><rect x="796" y="700" width="28" height="160"/><rect x="830" y="700" width="28" height="160"/><rect x="864" y="700" width="28" height="160"/>
@@ -42,14 +50,15 @@
 
   <!-- Back, B.Cu: odd contacts. The board has been flipped for a usable back-side view. -->
   <g transform="translate(1255,235)">
-    <text class="subheading" x="500" y="0" text-anchor="middle">BACK / B.Cu — ODD PINS</text>
+    <text class="subheading" x="500" y="0" text-anchor="middle">BOTTOM / B.Cu — ODD PINS</text>
     <text class="note" x="500" y="43" text-anchor="middle">Solder side; flipped to retain the edge-down view, so pin 1 is at the left.</text>
     <path class="board-back" d="M65 115 H935 V815 L855 900 H145 L65 815 Z"/>
     <text class="silk" x="500" y="265" text-anchor="middle">INTELLIPUTER CONNECTOR</text>
-    <text class="silk" x="500" y="300" text-anchor="middle">BACK / B.Cu</text>
+    <text class="silk" x="500" y="300" text-anchor="middle">BOTTOM / B.Cu</text>
     <rect class="header" x="170" y="375" width="660" height="100" rx="8"/>
-    <g class="hole">
-      <circle cx="200" cy="405" r="12"/><circle cx="200" cy="445" r="12"/><circle cx="260" cy="405" r="12"/><circle cx="260" cy="445" r="12"/><circle cx="320" cy="405" r="12"/><circle cx="320" cy="445" r="12"/><circle cx="380" cy="405" r="12"/><circle cx="380" cy="445" r="12"/><circle cx="440" cy="405" r="12"/><circle cx="440" cy="445" r="12"/><circle cx="500" cy="405" r="12"/><circle cx="500" cy="445" r="12"/><circle cx="560" cy="405" r="12"/><circle cx="560" cy="445" r="12"/><circle cx="620" cy="405" r="12"/><circle cx="620" cy="445" r="12"/><circle cx="680" cy="405" r="12"/><circle cx="680" cy="445" r="12"/><circle cx="740" cy="405" r="12"/><circle cx="740" cy="445" r="12"/><circle cx="800" cy="405" r="12"/><circle cx="800" cy="445" r="12"/>
+    <g>
+      <use href="#header-column" x="185"/><use href="#header-column" x="215"/><use href="#header-column" x="245"/><use href="#header-column" x="275"/><use href="#header-column" x="305"/><use href="#header-column" x="335"/><use href="#header-column" x="365"/><use href="#header-column" x="395"/><use href="#header-column" x="425"/><use href="#header-column" x="455"/><use href="#header-column" x="485"/><use href="#header-column" x="515"/><use href="#header-column" x="545"/><use href="#header-column" x="575"/><use href="#header-column" x="605"/><use href="#header-column" x="635"/><use href="#header-column" x="665"/><use href="#header-column" x="695"/><use href="#header-column" x="725"/><use href="#header-column" x="755"/><use href="#header-column" x="785"/><use href="#header-column" x="815"/>
+      <rect class="pin-one" x="173" y="433" width="24" height="24" rx="2"/>
     </g>
     <g class="copper">
       <rect x="150" y="700" width="28" height="160"/><rect x="184" y="700" width="28" height="160"/><rect x="218" y="700" width="28" height="160"/><rect x="252" y="700" width="28" height="160"/><rect x="286" y="700" width="28" height="160"/><rect x="320" y="700" width="28" height="160"/><rect x="354" y="700" width="28" height="160"/><rect x="388" y="700" width="28" height="160"/><rect x="422" y="700" width="28" height="160"/><rect x="456" y="700" width="28" height="160"/><rect x="490" y="700" width="28" height="160"/><rect x="524" y="700" width="28" height="160"/><rect x="558" y="700" width="28" height="160"/><rect x="592" y="700" width="28" height="160"/><rect x="626" y="700" width="28" height="160"/><rect x="660" y="700" width="28" height="160"/><rect x="694" y="700" width="28" height="160"/><rect x="728" y="700" width="28" height="160"/><rect x="762" y="700" width="28" height="160"/><rect x="796" y="700" width="28" height="160"/><rect x="830" y="700" width="28" height="160"/><rect x="864" y="700" width="28" height="160"/>

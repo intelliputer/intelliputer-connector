@@ -8,6 +8,6 @@ This is the stripped, passive replacement for the original Intellicart controlle
 - **Board:** 1.6 mm FR-4, using the original Intellicart / Intellivision cartridge outline: 68.07 mm maximum width, a 58.19 mm card tongue, and 83.91 mm overall length.
 - **Artwork:** a centered vintage-computer icon on the front silkscreen.
 
-The two rows of J2 are numbered as pairs per column from the right when viewed with the card-edge at the bottom: 1/2, then 3/4, through 43/44. Pin 1 is the square plated-through hole and is marked on the silkscreen.
+With the card-edge at the bottom and the component side facing the viewer, J2's upper row runs from 2 at the right through 44 at the left; its lower row runs from 1 at the right through 43 at the left. Pin 1 is the square plated-through hole and is marked on the silkscreen.
 
 No active components, pull-ups, LEDs, switches, display connector, or controller hardware are included. The original project files remain unchanged as a reference.

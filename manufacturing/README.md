@@ -1,8 +1,15 @@
 # Intelliputer Connector fabrication package
 
-This package was exported from `project/intelliputer_connector.kicad_pcb` with
+Revision 1.1 was exported from `project/intelliputer_connector.kicad_pcb` with
 KiCad 10.0.7. The source layout passes DRC with zero violations and zero
-unconnected items.
+unconnected items. Use `Intelliputer-Connector-Gerbers-r1.1.zip` for this
+revision; the non-revisioned archive is retained as the earlier fabrication
+package.
+
+Orientation marking: viewing the component/front side with J2 at the top, the
+J2 upper row is the even row (`44` at left to `2` at right); the lower row is
+the odd row (`43` at left to square-pad `1` at right). J1 retains the matching
+front-side edge labels, `44` at left and `2` at right.
 
 Fabrication requirements:
 
@@ -21,5 +28,5 @@ Files:
 - `.gbr`: Gerbers for front/back copper, solder mask, silkscreen, and board
   profile (the filename identifies the layer)
 - `.drl`: plated-through Excellon drill data
-- `Intelliputer-Connector-DRC.txt`: KiCad DRC result
-- `Intelliputer-Connector-Drill-Report.txt`: drill summary
+- `Intelliputer-Connector-DRC-r1.1.txt`: KiCad DRC result
+- `Intelliputer-Connector-Drill-Report-r1.1.txt`: drill summary
