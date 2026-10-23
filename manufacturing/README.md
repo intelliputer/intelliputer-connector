@@ -12,6 +12,9 @@ Manufacturing data is organized by J2 drill variant:
   (0.035 in) plated J2 drills. Its DRC also passes with zero violations and
   zero unconnected items. Its order archive is
   [`Intelliputer-Connector-Gerbers-r1.1-j2-0.889.zip`](intelliputer-connector-j2-0.889mm/Intelliputer-Connector-Gerbers-r1.1-j2-0.889.zip).
+  Eurocircuits has confirmed it for production with hard-gold J1 fingers and
+  a standard 30° bevel; see its
+  [`production release`](intelliputer-connector-j2-0.889mm/PRODUCTION-RELEASE.md).
 
 Orientation marking: viewing the component/front side with J2 at the top, the
 J2 upper row is the even row (`44` at left to `2` at right); the lower row is

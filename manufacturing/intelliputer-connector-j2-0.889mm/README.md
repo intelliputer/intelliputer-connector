@@ -6,6 +6,9 @@ KiCad 10.0.7 generated this package from
 - J2: 44 plated through-holes, **0.889 mm / 0.035 in** finished drill.
 - DRC: zero violations and zero unconnected pads.
 - Order archive: `Intelliputer-Connector-Gerbers-r1.1-j2-0.889.zip`.
+- Production status: **approved for production**; see
+  [`PRODUCTION-RELEASE.md`](PRODUCTION-RELEASE.md) for the confirmed
+  hard-gold, bevel, and J2-hole requirements.
 
 The archive contains the Gerbers, Excellon drill file, drill map, KiCad job
 file, DRC report, and drill report.
