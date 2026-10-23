@@ -5,20 +5,20 @@
       "Application": "Pcbnew",
       "Version": "10.0.7"
     },
-    "CreationDate": "2026-10-21T17:24:07+02:00"
+    "CreationDate": "2026-10-23T14:13:32+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "intelliputer_connector",
       "GUID": "696e7465-6c6c-4697-9075-7465725f636f",
-      "Revision": "1.0"
+      "Revision": "1.1-j2-0.889"
     },
     "Size": {
       "X": 68.172,
       "Y": 84.008
     },
     "LayerNumber": 2,
-    "BoardThickness": 1.6,
+    "BoardThickness": 1.55,
     "Finish": "None"
   },
   "DesignRules": [
@@ -84,7 +84,7 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 1.51,
+      "Thickness": 1.46,
       "Material": "FR4",
       "Name": "F.Cu/B.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"

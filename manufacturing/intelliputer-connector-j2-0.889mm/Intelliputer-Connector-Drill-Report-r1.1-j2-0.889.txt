@@ -1,5 +1,5 @@
 Drill report for intelliputer_connector.kicad_pcb
-Created on 2026-10-21T17:24:07
+Created on 2026-10-23T14:13:33
 
 Copper Layer Stackup:
     =============================================================
@@ -10,7 +10,7 @@ Copper Layer Stackup:
 Drill file 'intelliputer_connector.drl' contains
     plated through holes:
     =============================================================
-    T1  1.000mm  0.0394"  (44 holes))
+    T1  0.889mm  0.0350"  (44 holes))
 
     Total plated holes count 44
 

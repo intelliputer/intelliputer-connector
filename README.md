@@ -1,10 +1,16 @@
 # Intelliputer Connector
 
-Passive 44-contact Intellivision cartridge card-edge to 44-way ribbon-header adapter.
+Passive 44-contact Intellivision cartridge card-edge to 44-way ribbon-header
+adapter.
 
-Open [the Intelliputer Connector design](project/intelliputer_connector.kicad_pcb) in KiCad. Its
-card-edge contacts connect one-to-one with the 2×22 through-hole ribbon header;
-the board uses the original cartridge outline.
+Two KiCad variants are maintained. Their card-edge contacts connect one-to-one
+with the 2 × 22 through-hole J2 header and use the original cartridge outline:
+
+- [Baseline 1.000 mm J2](project/intelliputer-connector-j2-1.000mm/intelliputer_connector.kicad_pcb)
+  — 44 × 1.000 mm (0.0394 in) plated drills.
+- [M6x09-matched 0.889 mm J2](project/intelliputer-connector-j2-0.889mm/intelliputer_connector.kicad_pcb)
+  — 44 × 0.889 mm (0.035 in) plated drills, matching the M6x09-II-SBC H2
+  expansion-header drill size.
 
 ## Cartridge-port pin assignment
 
@@ -86,12 +92,14 @@ outputs on 37/39/41 and drive the inputs on 36/34/32 deliberately instead.
 - The 1:1 routing is complete, including the repaired `CARD_14` connection.
 - The card/tongue end is shortened by 15 mm (83.91 mm overall board length)
   and includes centered front-silkscreen artwork.
-- KiCad 10.0.7 DRC passes with **zero violations** and **zero unconnected
-  items**.
-- The current fabrication package is available as
-  [Intelliputer-Connector-Gerbers-r1.1.zip](manufacturing/Intelliputer-Connector-Gerbers-r1.1.zip).
-  It contains the `.gbr` Gerbers, Excellon drill data, drill map, and current
-  DRC and drill reports.
+- Both variants were checked with KiCad 10.0.7 DRC and have **zero
+  violations** and **zero unconnected items**.
+- The released 1.000 mm-J2 fabrication package is available as
+  [Intelliputer-Connector-Gerbers-r1.1.zip](manufacturing/intelliputer-connector-j2-1.000mm/Intelliputer-Connector-Gerbers-r1.1.zip).
+- The 0.889 mm-J2 package is available as
+  [Intelliputer-Connector-Gerbers-r1.1-j2-0.889.zip](manufacturing/intelliputer-connector-j2-0.889mm/Intelliputer-Connector-Gerbers-r1.1-j2-0.889.zip).
+- Both variants include KiCad-rendered front and rear inspection images in
+  their respective `manufacturing/.../inspection/` folders.
 
 See the [fabrication package notes](manufacturing/README.md) for board-house
 requirements and file details.
